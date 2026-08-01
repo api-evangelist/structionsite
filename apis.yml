@@ -1,19 +1,44 @@
 aid: structionsite
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/structionsite.png
 name: StructionSite
-description: StructionSite is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: StructionSite was a construction-technology company providing jobsite reality-capture and
+  progress-documentation software (360-degree walkthrough video and photo documentation of construction
+  sites, tied to project plans). It was surfaced as a portfolio company of 500 Global. As of this enrichment
+  pass the standalone StructionSite brand has been absorbed by its acquirer DroneDeploy - structionsite.com,
+  www.structionsite.com, and api.structionsite.com all HTTP 301-redirect to www.dronedeploy.com. No
+  independent StructionSite developer portal, API documentation, OpenAPI/AsyncAPI specification, package,
+  or /.well-known discovery surface could be found; any API surface now lives under the DroneDeploy brand.
 url: https://raw.githubusercontent.com/api-evangelist/structionsite/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
+x-acquired-by: dronedeploy
+x-status: acquired-redirects-to-acquirer
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Construction
+- Construction Technology
+- Reality Capture
+- Jobsite Documentation
+- Progress Tracking
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +48,11 @@ maintainers:
 common:
 - type: Website
   url: https://structionsite.com
+- type: Acquirer
+  name: DroneDeploy
+  url: https://www.dronedeploy.com
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
